@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей любимой Инули</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe4e1;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 3rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .heart {
+            font-size: 5rem;
+            color: red;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes beat {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Для моей любимой Инули ❤️</h1>
+        <div class="heart">💖</div>
+        <p>Ты — моё счастье, моё вдохновение и моё сердце. Я люблю тебя больше всего на свете!</p>
+        <button onclick="showMessage()">Нажми, чтобы увидеть сюрприз</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('Ты — лучшее, что случилось в моей жизни, Инуля!');
+        }
+    </script>
+</body>
+</html>
